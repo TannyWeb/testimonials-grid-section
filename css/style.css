@@ -100,3 +100,45 @@ body {
     height: 100px;
     z-index: -1;
 }
+
+
+@media only screen and (min-width: 1200px) {
+
+    .grid-wrapper {
+        display: grid;
+        /* grid-template-columns: repeat(4, 1fr);
+        grid-row: auto; */
+        gap: 20px;
+
+        grid-template-areas:
+        "one one two five"
+        "three four four five";
+    }
+    .grid-item {
+        margin-bottom: 0;
+    }
+
+    .item-1 {
+        grid-area: one;
+    }
+
+    item-2 {
+        grid-area: two;
+    }
+    .item-3 {
+        /* grid-row: 2/3; */
+        grid-area: three;
+    }
+    .item-4 {
+        /* grid-row: 2/3; */
+        grid-area: four;
+    }
+    .item-5 {
+        grid-area: five;
+        /* grid-row: 1/3; */
+    }
+
+
+
+
+  }
