@@ -89,19 +89,14 @@ body {
     color: var(--Very-dark-grayish-blue)
 }
 
-.item-1::before {
-    /* content: '';
-    position: absolute;
-    background-image: url('/images/bg-pattern-quotation.svg');
-    height: 100px;
-    width: 100px;
-    opacity: 50%;
-    top: 0;
-    right: 25px; */
 
-    content: url('/images/bg-pattern-quotation.svg');
+.weird-img {
+    background-image: url('/images/bg-pattern-quotation.svg');
     position: absolute;
     top: 0;
     right: 25px;
     opacity: 60%;
+    width: 100px;
+    height: 100px;
+    z-index: -1;
 }
