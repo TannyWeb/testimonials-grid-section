@@ -28,13 +28,16 @@ body {
 
 .grid-item {
     border-radius: 0.625rem;
-    padding: 0.9375rem;
+    padding: 1.5625rem;
     margin-bottom: 1.25rem;
+    color: var(--White);
+    /* line-height: 1.4;; */
 }
 
 .person-info {
     display: flex;
     align-items: center;
+    margin-bottom: 15px;
 }
 
 .person-info img {
@@ -45,20 +48,60 @@ body {
 
 .item-1 {
     background-color: var(--Moderate-violet);
+    position: relative;
 }
 
-.grid-item .person-title  {
-    color: var(--White);
-}
+
 .grid-item .person-title h3 {
-    font-size: 0.75rem;
+    font-size: 1rem;
 }
 .grid-item .person-title p {
     opacity: 50%;
-    font-size: 10px;
+    font-size: 0.75rem;
 }
 
 .main-para {
     font-weight: 600;
-    color: var(--White);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.secondary-para {
+    opacity: 70%;
+    font-size: 0.875rem;
+
+}
+
+.item-2 {
+    background: var(--Very-dark-grayish-blue);
+}
+
+.item-3 {
+    background: var(--White);
+    color: var(--Very-dark-grayish-blue)
+}
+
+.item-4 {
+    background: var(--Very-dark-blackish-blue);
+}
+.item-5 {
+    background: var(--White);
+    color: var(--Very-dark-grayish-blue)
+}
+
+.item-1::before {
+    /* content: '';
+    position: absolute;
+    background-image: url('/images/bg-pattern-quotation.svg');
+    height: 100px;
+    width: 100px;
+    opacity: 50%;
+    top: 0;
+    right: 25px; */
+
+    content: url('/images/bg-pattern-quotation.svg');
+    position: absolute;
+    top: 0;
+    right: 25px;
+    opacity: 60%;
 }
